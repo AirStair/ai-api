@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . /app
 COPY --from=composer/composer:latest-bin /composer /usr/bin/composer
 RUN composer install
-RUN frankenphp php-server -r /app/public -l ${FRANKENPHP_ADDRESS}
+RUN frankenphp php-server -r /app/public -d ${FRANKENPHP_SERVER_DOMAIN}
