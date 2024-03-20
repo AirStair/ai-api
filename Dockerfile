@@ -1,3 +1,4 @@
+EXPOSE 3478
 FROM dunglas/frankenphp
 RUN install-php-extensions \
 	zip
