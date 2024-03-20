@@ -5,5 +5,5 @@ RUN install-php-extensions \
 COPY --from=composer/composer:latest-bin /composer /usr/bin/composer
 WORKDIR /app
 COPY . /app
-CMD composer install
+RUN composer install
 CMD frankenphp php-server -r /app/public
