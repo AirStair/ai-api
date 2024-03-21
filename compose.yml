@@ -4,4 +4,4 @@ services:
   mysql:
     image: "mysql:8.0.36-bookworm"
     ports:
-      - "8000:5000"
+      - "3478:80"
