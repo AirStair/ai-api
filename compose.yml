@@ -1,7 +1,7 @@
 services:
   web:
     build: .
+  mysql:
+    image: "mysql:8.0.36-bookworm"
     ports:
       - "8000:5000"
-  mysql:
-    image: "redis:alpine"
